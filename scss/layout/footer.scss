@@ -1,0 +1,16 @@
+.titulo-final {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-items: center;
+}
+
+footer{
+    display: flex;
+    background-color: #959090;
+    color: #f2eded;
+    text-align: center;
+    padding: 40px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
