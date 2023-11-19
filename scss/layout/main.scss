@@ -2,7 +2,7 @@ main {
     padding: 20px;
 
     section {
-        background-color: #d5d2d2;
+        background-color: $color-decimo;
         margin: 20px 0;
         padding: 20px;
 
@@ -39,47 +39,38 @@ main {
         margin: 0 auto;
     }
 
-    .carousel-caption h5 {
-        color: #ffffff;
-        text-shadow: #959090;
+    .carousel-caption {
+        h5 {
+            color: $color-fondo;
+            text-shadow: $color-quinto;
 
+        }
     }
-
     img {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%;
         height: auto;
         justify-content: center;
         align-items: center;
         opacity: 1;
-        padding: 13px;
-
     }
-
     h2 {
-        color: #282525;
+        color: $color-sexto;
     }
 
     .contenido-textos {
         h3 {
             font-size: 20px;
-            color: #575757;
+            color: $color-septimo;
             align-items: center;
         }
 
         h4 {
             font-size: 18px;
-            color: #424242;
+            color: $color-octavo;
         }
     }
-
-    .about-services {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-        align-content: center;
     }
 
     .servicio-ind {
@@ -89,24 +80,33 @@ main {
             justify-content: center;
             align-items: center;
         }
-
+        p {   
+            display: flex;
+            flex-direction: row;
+            font-size: 15px;
+            color: $color-noveno;
+            align-items: center;
+            justify-content: center;
     }
 
-    .servicio-ind p {
-        display: flex;
-        flex-direction: row;
-        font-size: 15px;
-        color: #555;
-        align-items: center;
-        justify-content: center;
     }
-
     #formulario {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    }
-   
-}
+        max-width: 100%; // Ajusta el ancho máximo según tus preferencias
+        margin: 0 auto; // Centra el formulario horizontalmente
+      
+        form {
+          display: flex;
+          flex-wrap: wrap; // Permitir que los elementos se envuelvan a la siguiente línea
+      
+          label,
+          input,
+          textarea,
+          button {
+            flex: 0 0 100%; // Ocupar todo el ancho en una nueva línea
+          }
+        }
+      }

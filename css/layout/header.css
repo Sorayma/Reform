@@ -1,35 +1,17 @@
-header {
-  width: 100%;
-  height: 300px;
-  padding-top: 15px;
-  background-size: cover;
-  background-color: #EFE5DC;
-  background-image: url(../imagenes/background.jpg);
-  color: whitesmoke;
-  text-align: center;
-  object-fit: cover;
-}
-header a:hover {
-  background-color: #ffffff;
-  color: #9e9494;
-}
-header nav li {
-  display: inline;
-  margin: 20px;
-  color: #9e9494;
-}
-header nav a {
-  font-weight: bold;
-  color: #c1c1c1;
-  text-decoration: none;
-}
-header .textos-header h1 {
-  font-size: 20px;
-  color: #cccccc;
-}
-header .textos-header h2 {
-  font-size: 20px;
-  color: #a0a0a0;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 14 |             color: $color-primario;
+ *    |                    ^^^^^^^^^^^^^^^
+ *    '
+ *   scss\layout\header.scss 14:20  root stylesheet */
 
-/*# sourceMappingURL=header.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 14 \2502              color: $color-primario;\d\a    \2502                     ^^^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\header.scss 14:20  root stylesheet";
+}

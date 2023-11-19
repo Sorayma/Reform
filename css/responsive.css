@@ -31,5 +31,12 @@
     height: auto;
   }
 }
+@media (min-width: 578px) {
+  .img-main {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+}
 
 /*# sourceMappingURL=responsive.css.map */

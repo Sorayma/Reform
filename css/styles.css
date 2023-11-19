@@ -31,6 +31,13 @@
     height: auto;
   }
 }
+@media (min-width: 578px) {
+  .img-main {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -41,15 +48,9 @@ header {
   height: 300px;
   padding-top: 15px;
   background-size: cover;
-  background-color: #EFE5DC;
   background-image: url(../imagenes/background.jpg);
-  color: whitesmoke;
   text-align: center;
   object-fit: cover;
-}
-header a:hover {
-  background-color: #ffffff;
-  color: #9e9494;
 }
 header nav li {
   display: inline;
@@ -60,6 +61,10 @@ header nav a {
   font-weight: bold;
   color: #c1c1c1;
   text-decoration: none;
+}
+header nav a:hover {
+  background-color: #ffffff;
+  color: #9e9494;
 }
 header .textos-header h1 {
   font-size: 20px;
@@ -112,12 +117,11 @@ main .carousel-caption h5 {
 main img {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   height: auto;
   justify-content: center;
   align-items: center;
   opacity: 1;
-  padding: 15px;
 }
 main h2 {
   color: #282525;
@@ -131,20 +135,14 @@ main .contenido-textos h4 {
   font-size: 18px;
   color: #424242;
 }
-main .about-services {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-  align-content: center;
-}
-main .servicio-ind h3 {
+
+.servicio-ind h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-main .servicio-ind p {
+.servicio-ind p {
   display: flex;
   flex-direction: row;
   font-size: 15px;
@@ -152,18 +150,24 @@ main .servicio-ind p {
   align-items: center;
   justify-content: center;
 }
-main #formulario {
+
+#formulario {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
 }
-main .contacto-nosotros {
+#formulario form {
   display: flex;
-  flex-direction: column;
-  width: 300px;
-  height: 400px;
+  flex-wrap: wrap;
+}
+#formulario form label,
+#formulario form input,
+#formulario form textarea,
+#formulario form button {
+  flex: 0 0 100%;
 }
 
 .titulo-final {

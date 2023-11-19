@@ -1,18 +1,17 @@
-.titulo-final {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  justify-items: center;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 10 |     background-color: $color-quinto;
+ *    |                       ^^^^^^^^^^^^^
+ *    '
+ *   scss\layout\footer.scss 10:23  root stylesheet */
 
-footer {
-  display: flex;
-  background-color: #959090;
-  color: #f2eded;
-  text-align: center;
-  padding: 40px 0;
-  justify-content: center;
-  flex-wrap: wrap;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 10 \2502      background-color: $color-quinto;\d\a    \2502                        ^^^^^^^^^^^^^\a    \2575 \a   scss\\layout\\footer.scss 10:23  root stylesheet";
 }
-
-/*# sourceMappingURL=footer.css.map */
